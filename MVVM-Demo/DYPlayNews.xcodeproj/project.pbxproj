@@ -1,0 +1,953 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5F26DD261ED705A20037680C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F26DD251ED705A20037680C /* main.m */; };
+		5F26DD291ED705A20037680C /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F26DD281ED705A20037680C /* AppDelegate.m */; };
+		5F26DD2F1ED705A20037680C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F26DD2D1ED705A20037680C /* Main.storyboard */; };
+		5F26DD311ED705A20037680C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5F26DD301ED705A20037680C /* Assets.xcassets */; };
+		5F26DD341ED705A20037680C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5F26DD321ED705A20037680C /* LaunchScreen.storyboard */; };
+		5F26DD3F1ED705A20037680C /* DYPlayNewsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F26DD3E1ED705A20037680C /* DYPlayNewsTests.m */; };
+		5F26DD4A1ED705A20037680C /* DYPlayNewsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F26DD491ED705A20037680C /* DYPlayNewsUITests.m */; };
+		5F26DD791ED70D340037680C /* DYTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F26DD781ED70D340037680C /* DYTabBarController.m */; };
+		5F26DD7C1ED70D680037680C /* DYMineController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F26DD7B1ED70D680037680C /* DYMineController.m */; };
+		5F26DD841ED70F030037680C /* DYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F26DD831ED70F030037680C /* DYBaseViewController.m */; };
+		5F26DD871ED70F230037680C /* DYZoneController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F26DD861ED70F230037680C /* DYZoneController.m */; };
+		5F26DD8A1ED70F3D0037680C /* DYRecommendController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F26DD891ED70F3D0037680C /* DYRecommendController.m */; };
+		5F26DD8D1ED70F550037680C /* DYNewsController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F26DD8C1ED70F550037680C /* DYNewsController.m */; };
+		5F26DD901ED70FBC0037680C /* DYNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F26DD8F1ED70FBC0037680C /* DYNavigationController.m */; };
+		5F26DD931ED722B20037680C /* DYBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F26DD921ED722B20037680C /* DYBaseViewModel.m */; };
+		5F26DD961ED723E80037680C /* DYBaseEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F26DD951ED723E80037680C /* DYBaseEntity.m */; };
+		5F26DD991ED725200037680C /* DYNews.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F26DD981ED725200037680C /* DYNews.m */; };
+		5F26DD9C1ED725DF0037680C /* DYNewsDetailInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 5F26DD9B1ED725DF0037680C /* DYNewsDetailInfo.m */; };
+		6A145A90A1146A0C943B8C08 /* libPods-DYPlayNewsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6792160B055A5D11090CC02 /* libPods-DYPlayNewsTests.a */; };
+		F305F5488744563C89B4B39A /* libPods-DYPlayNews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 114986185651D99D9693DE64 /* libPods-DYPlayNews.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		5F26DD3B1ED705A20037680C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F26DD191ED705A20037680C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F26DD201ED705A20037680C;
+			remoteInfo = DYPlayNews;
+		};
+		5F26DD461ED705A20037680C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5F26DD191ED705A20037680C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5F26DD201ED705A20037680C;
+			remoteInfo = DYPlayNews;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		114986185651D99D9693DE64 /* libPods-DYPlayNews.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DYPlayNews.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4E9FA957DA9F22C0A55AC851 /* Pods-DYPlayNewsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYPlayNewsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-DYPlayNewsTests/Pods-DYPlayNewsTests.release.xcconfig"; sourceTree = "<group>"; };
+		5924FBA3F914F7DDC7A31D6F /* Pods-DYPlayNews.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYPlayNews.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DYPlayNews/Pods-DYPlayNews.debug.xcconfig"; sourceTree = "<group>"; };
+		5F26DD211ED705A20037680C /* DYPlayNews.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DYPlayNews.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F26DD251ED705A20037680C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		5F26DD271ED705A20037680C /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		5F26DD281ED705A20037680C /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		5F26DD2E1ED705A20037680C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		5F26DD301ED705A20037680C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		5F26DD331ED705A20037680C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		5F26DD351ED705A20037680C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F26DD3A1ED705A20037680C /* DYPlayNewsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DYPlayNewsTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F26DD3E1ED705A20037680C /* DYPlayNewsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYPlayNewsTests.m; sourceTree = "<group>"; };
+		5F26DD401ED705A20037680C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F26DD451ED705A20037680C /* DYPlayNewsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DYPlayNewsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5F26DD491ED705A20037680C /* DYPlayNewsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DYPlayNewsUITests.m; sourceTree = "<group>"; };
+		5F26DD4B1ED705A20037680C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5F26DD771ED70D340037680C /* DYTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYTabBarController.h; sourceTree = "<group>"; };
+		5F26DD781ED70D340037680C /* DYTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYTabBarController.m; sourceTree = "<group>"; };
+		5F26DD7A1ED70D680037680C /* DYMineController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYMineController.h; sourceTree = "<group>"; };
+		5F26DD7B1ED70D680037680C /* DYMineController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYMineController.m; sourceTree = "<group>"; };
+		5F26DD821ED70F030037680C /* DYBaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYBaseViewController.h; sourceTree = "<group>"; };
+		5F26DD831ED70F030037680C /* DYBaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYBaseViewController.m; sourceTree = "<group>"; };
+		5F26DD851ED70F230037680C /* DYZoneController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYZoneController.h; sourceTree = "<group>"; };
+		5F26DD861ED70F230037680C /* DYZoneController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYZoneController.m; sourceTree = "<group>"; };
+		5F26DD881ED70F3D0037680C /* DYRecommendController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYRecommendController.h; sourceTree = "<group>"; };
+		5F26DD891ED70F3D0037680C /* DYRecommendController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYRecommendController.m; sourceTree = "<group>"; };
+		5F26DD8B1ED70F550037680C /* DYNewsController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYNewsController.h; sourceTree = "<group>"; };
+		5F26DD8C1ED70F550037680C /* DYNewsController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYNewsController.m; sourceTree = "<group>"; };
+		5F26DD8E1ED70FBC0037680C /* DYNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYNavigationController.h; sourceTree = "<group>"; };
+		5F26DD8F1ED70FBC0037680C /* DYNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYNavigationController.m; sourceTree = "<group>"; };
+		5F26DD911ED722B20037680C /* DYBaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYBaseViewModel.h; sourceTree = "<group>"; };
+		5F26DD921ED722B20037680C /* DYBaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYBaseViewModel.m; sourceTree = "<group>"; };
+		5F26DD941ED723E80037680C /* DYBaseEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYBaseEntity.h; sourceTree = "<group>"; };
+		5F26DD951ED723E80037680C /* DYBaseEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYBaseEntity.m; sourceTree = "<group>"; };
+		5F26DD971ED725200037680C /* DYNews.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYNews.h; sourceTree = "<group>"; };
+		5F26DD981ED725200037680C /* DYNews.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYNews.m; sourceTree = "<group>"; };
+		5F26DD9A1ED725DF0037680C /* DYNewsDetailInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYNewsDetailInfo.h; sourceTree = "<group>"; };
+		5F26DD9B1ED725DF0037680C /* DYNewsDetailInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYNewsDetailInfo.m; sourceTree = "<group>"; };
+		A54EB0B9858EB6B764847202 /* Pods-DYPlayNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYPlayNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-DYPlayNews/Pods-DYPlayNews.release.xcconfig"; sourceTree = "<group>"; };
+		B6792160B055A5D11090CC02 /* libPods-DYPlayNewsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DYPlayNewsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F855E4C8B46D8473ABFEDEAB /* Pods-DYPlayNewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYPlayNewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DYPlayNewsTests/Pods-DYPlayNewsTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		5F26DD1E1ED705A20037680C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F305F5488744563C89B4B39A /* libPods-DYPlayNews.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F26DD371ED705A20037680C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6A145A90A1146A0C943B8C08 /* libPods-DYPlayNewsTests.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F26DD421ED705A20037680C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		26A42EE8D6F33B7AA196C562 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5924FBA3F914F7DDC7A31D6F /* Pods-DYPlayNews.debug.xcconfig */,
+				A54EB0B9858EB6B764847202 /* Pods-DYPlayNews.release.xcconfig */,
+				F855E4C8B46D8473ABFEDEAB /* Pods-DYPlayNewsTests.debug.xcconfig */,
+				4E9FA957DA9F22C0A55AC851 /* Pods-DYPlayNewsTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		5F26DD181ED705A20037680C = {
+			isa = PBXGroup;
+			children = (
+				5F26DD231ED705A20037680C /* DYPlayNews */,
+				5F26DD3D1ED705A20037680C /* DYPlayNewsTests */,
+				5F26DD481ED705A20037680C /* DYPlayNewsUITests */,
+				5F26DD221ED705A20037680C /* Products */,
+				26A42EE8D6F33B7AA196C562 /* Pods */,
+				9544463A9D40BF4144B1F856 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		5F26DD221ED705A20037680C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				5F26DD211ED705A20037680C /* DYPlayNews.app */,
+				5F26DD3A1ED705A20037680C /* DYPlayNewsTests.xctest */,
+				5F26DD451ED705A20037680C /* DYPlayNewsUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		5F26DD231ED705A20037680C /* DYPlayNews */ = {
+			isa = PBXGroup;
+			children = (
+				5F26DD571ED707F60037680C /* Common */,
+				5F26DD581ED707F60037680C /* Modules */,
+				5F26DD5D1ED707F60037680C /* Network */,
+				5F26DD271ED705A20037680C /* AppDelegate.h */,
+				5F26DD281ED705A20037680C /* AppDelegate.m */,
+				5F26DD2D1ED705A20037680C /* Main.storyboard */,
+				5F26DD301ED705A20037680C /* Assets.xcassets */,
+				5F26DD321ED705A20037680C /* LaunchScreen.storyboard */,
+				5F26DD351ED705A20037680C /* Info.plist */,
+				5F26DD241ED705A20037680C /* Supporting Files */,
+			);
+			path = DYPlayNews;
+			sourceTree = "<group>";
+		};
+		5F26DD241ED705A20037680C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				5F26DD251ED705A20037680C /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		5F26DD3D1ED705A20037680C /* DYPlayNewsTests */ = {
+			isa = PBXGroup;
+			children = (
+				5F26DD3E1ED705A20037680C /* DYPlayNewsTests.m */,
+				5F26DD401ED705A20037680C /* Info.plist */,
+			);
+			path = DYPlayNewsTests;
+			sourceTree = "<group>";
+		};
+		5F26DD481ED705A20037680C /* DYPlayNewsUITests */ = {
+			isa = PBXGroup;
+			children = (
+				5F26DD491ED705A20037680C /* DYPlayNewsUITests.m */,
+				5F26DD4B1ED705A20037680C /* Info.plist */,
+			);
+			path = DYPlayNewsUITests;
+			sourceTree = "<group>";
+		};
+		5F26DD571ED707F60037680C /* Common */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		5F26DD581ED707F60037680C /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				5F26DD601ED708810037680C /* Home */,
+				5F26DD6A1ED70CDF0037680C /* News */,
+				5F26DD6F1ED70CDF0037680C /* Recommend */,
+				5F26DD7D1ED70ECD0037680C /* Zone */,
+				5F26DD651ED70CDF0037680C /* Mine */,
+				5F26DD821ED70F030037680C /* DYBaseViewController.h */,
+				5F26DD831ED70F030037680C /* DYBaseViewController.m */,
+				5F26DD911ED722B20037680C /* DYBaseViewModel.h */,
+				5F26DD921ED722B20037680C /* DYBaseViewModel.m */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		5F26DD5D1ED707F60037680C /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5F26DD5E1ED707F60037680C /* RequestEntity */,
+				5F26DD5F1ED707F60037680C /* ResponseEntity */,
+				5F26DD941ED723E80037680C /* DYBaseEntity.h */,
+				5F26DD951ED723E80037680C /* DYBaseEntity.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		5F26DD5E1ED707F60037680C /* RequestEntity */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RequestEntity;
+			sourceTree = "<group>";
+		};
+		5F26DD5F1ED707F60037680C /* ResponseEntity */ = {
+			isa = PBXGroup;
+			children = (
+				5F26DD971ED725200037680C /* DYNews.h */,
+				5F26DD981ED725200037680C /* DYNews.m */,
+				5F26DD9A1ED725DF0037680C /* DYNewsDetailInfo.h */,
+				5F26DD9B1ED725DF0037680C /* DYNewsDetailInfo.m */,
+			);
+			path = ResponseEntity;
+			sourceTree = "<group>";
+		};
+		5F26DD601ED708810037680C /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				5F26DD611ED708810037680C /* Controller */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		5F26DD611ED708810037680C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5F26DD621ED708810037680C /* Storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5F26DD621ED708810037680C /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5F26DD771ED70D340037680C /* DYTabBarController.h */,
+				5F26DD781ED70D340037680C /* DYTabBarController.m */,
+				5F26DD8E1ED70FBC0037680C /* DYNavigationController.h */,
+				5F26DD8F1ED70FBC0037680C /* DYNavigationController.m */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		5F26DD651ED70CDF0037680C /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				5F26DD661ED70CDF0037680C /* Controller */,
+				5F26DD681ED70CDF0037680C /* View */,
+				5F26DD691ED70CDF0037680C /* ViewModel */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		5F26DD661ED70CDF0037680C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5F26DD671ED70CDF0037680C /* Storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5F26DD671ED70CDF0037680C /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5F26DD7A1ED70D680037680C /* DYMineController.h */,
+				5F26DD7B1ED70D680037680C /* DYMineController.m */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		5F26DD681ED70CDF0037680C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5F26DD691ED70CDF0037680C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5F26DD6A1ED70CDF0037680C /* News */ = {
+			isa = PBXGroup;
+			children = (
+				5F26DD6B1ED70CDF0037680C /* Controller */,
+				5F26DD6D1ED70CDF0037680C /* View */,
+				5F26DD6E1ED70CDF0037680C /* ViewModel */,
+			);
+			path = News;
+			sourceTree = "<group>";
+		};
+		5F26DD6B1ED70CDF0037680C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5F26DD6C1ED70CDF0037680C /* Storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5F26DD6C1ED70CDF0037680C /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5F26DD8B1ED70F550037680C /* DYNewsController.h */,
+				5F26DD8C1ED70F550037680C /* DYNewsController.m */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		5F26DD6D1ED70CDF0037680C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5F26DD6E1ED70CDF0037680C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5F26DD6F1ED70CDF0037680C /* Recommend */ = {
+			isa = PBXGroup;
+			children = (
+				5F26DD701ED70CDF0037680C /* Controller */,
+				5F26DD721ED70CDF0037680C /* View */,
+				5F26DD731ED70CDF0037680C /* ViewModel */,
+			);
+			path = Recommend;
+			sourceTree = "<group>";
+		};
+		5F26DD701ED70CDF0037680C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5F26DD711ED70CDF0037680C /* Storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5F26DD711ED70CDF0037680C /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5F26DD881ED70F3D0037680C /* DYRecommendController.h */,
+				5F26DD891ED70F3D0037680C /* DYRecommendController.m */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		5F26DD721ED70CDF0037680C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5F26DD731ED70CDF0037680C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		5F26DD7D1ED70ECD0037680C /* Zone */ = {
+			isa = PBXGroup;
+			children = (
+				5F26DD7E1ED70ECD0037680C /* Controller */,
+				5F26DD801ED70ECD0037680C /* View */,
+				5F26DD811ED70ECD0037680C /* ViewModel */,
+			);
+			path = Zone;
+			sourceTree = "<group>";
+		};
+		5F26DD7E1ED70ECD0037680C /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5F26DD7F1ED70ECD0037680C /* Storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5F26DD7F1ED70ECD0037680C /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5F26DD851ED70F230037680C /* DYZoneController.h */,
+				5F26DD861ED70F230037680C /* DYZoneController.m */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		5F26DD801ED70ECD0037680C /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		5F26DD811ED70ECD0037680C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		9544463A9D40BF4144B1F856 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				114986185651D99D9693DE64 /* libPods-DYPlayNews.a */,
+				B6792160B055A5D11090CC02 /* libPods-DYPlayNewsTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5F26DD201ED705A20037680C /* DYPlayNews */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F26DD4E1ED705A20037680C /* Build configuration list for PBXNativeTarget "DYPlayNews" */;
+			buildPhases = (
+				2565C6A1AF161FDBD57CD8A7 /* [CP] Check Pods Manifest.lock */,
+				5F26DD1D1ED705A20037680C /* Sources */,
+				5F26DD1E1ED705A20037680C /* Frameworks */,
+				5F26DD1F1ED705A20037680C /* Resources */,
+				A6380ED78BD641F5BF799E90 /* [CP] Embed Pods Frameworks */,
+				34D6BFE564283872D150C854 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DYPlayNews;
+			productName = DYPlayNews;
+			productReference = 5F26DD211ED705A20037680C /* DYPlayNews.app */;
+			productType = "com.apple.product-type.application";
+		};
+		5F26DD391ED705A20037680C /* DYPlayNewsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F26DD511ED705A20037680C /* Build configuration list for PBXNativeTarget "DYPlayNewsTests" */;
+			buildPhases = (
+				E275FD2B653F98FF1F466FC4 /* [CP] Check Pods Manifest.lock */,
+				5F26DD361ED705A20037680C /* Sources */,
+				5F26DD371ED705A20037680C /* Frameworks */,
+				5F26DD381ED705A20037680C /* Resources */,
+				B0B23A32FBF9AADDA8BC20EA /* [CP] Embed Pods Frameworks */,
+				B75692DAA3EBD5DF4167DD8D /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F26DD3C1ED705A20037680C /* PBXTargetDependency */,
+			);
+			name = DYPlayNewsTests;
+			productName = DYPlayNewsTests;
+			productReference = 5F26DD3A1ED705A20037680C /* DYPlayNewsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5F26DD441ED705A20037680C /* DYPlayNewsUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5F26DD541ED705A20037680C /* Build configuration list for PBXNativeTarget "DYPlayNewsUITests" */;
+			buildPhases = (
+				5F26DD411ED705A20037680C /* Sources */,
+				5F26DD421ED705A20037680C /* Frameworks */,
+				5F26DD431ED705A20037680C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5F26DD471ED705A20037680C /* PBXTargetDependency */,
+			);
+			name = DYPlayNewsUITests;
+			productName = DYPlayNewsUITests;
+			productReference = 5F26DD451ED705A20037680C /* DYPlayNewsUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		5F26DD191ED705A20037680C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = DY;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = "https://github.com/DefaultYuan";
+				TargetAttributes = {
+					5F26DD201ED705A20037680C = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+					};
+					5F26DD391ED705A20037680C = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5F26DD201ED705A20037680C;
+					};
+					5F26DD441ED705A20037680C = {
+						CreatedOnToolsVersion = 8.3.2;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 5F26DD201ED705A20037680C;
+					};
+				};
+			};
+			buildConfigurationList = 5F26DD1C1ED705A20037680C /* Build configuration list for PBXProject "DYPlayNews" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 5F26DD181ED705A20037680C;
+			productRefGroup = 5F26DD221ED705A20037680C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5F26DD201ED705A20037680C /* DYPlayNews */,
+				5F26DD391ED705A20037680C /* DYPlayNewsTests */,
+				5F26DD441ED705A20037680C /* DYPlayNewsUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		5F26DD1F1ED705A20037680C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F26DD341ED705A20037680C /* LaunchScreen.storyboard in Resources */,
+				5F26DD311ED705A20037680C /* Assets.xcassets in Resources */,
+				5F26DD2F1ED705A20037680C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F26DD381ED705A20037680C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F26DD431ED705A20037680C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2565C6A1AF161FDBD57CD8A7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		34D6BFE564283872D150C854 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DYPlayNews/Pods-DYPlayNews-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A6380ED78BD641F5BF799E90 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DYPlayNews/Pods-DYPlayNews-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B0B23A32FBF9AADDA8BC20EA /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DYPlayNewsTests/Pods-DYPlayNewsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B75692DAA3EBD5DF4167DD8D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-DYPlayNewsTests/Pods-DYPlayNewsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E275FD2B653F98FF1F466FC4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		5F26DD1D1ED705A20037680C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F26DD931ED722B20037680C /* DYBaseViewModel.m in Sources */,
+				5F26DD961ED723E80037680C /* DYBaseEntity.m in Sources */,
+				5F26DD791ED70D340037680C /* DYTabBarController.m in Sources */,
+				5F26DD901ED70FBC0037680C /* DYNavigationController.m in Sources */,
+				5F26DD291ED705A20037680C /* AppDelegate.m in Sources */,
+				5F26DD871ED70F230037680C /* DYZoneController.m in Sources */,
+				5F26DD7C1ED70D680037680C /* DYMineController.m in Sources */,
+				5F26DD8A1ED70F3D0037680C /* DYRecommendController.m in Sources */,
+				5F26DD841ED70F030037680C /* DYBaseViewController.m in Sources */,
+				5F26DD9C1ED725DF0037680C /* DYNewsDetailInfo.m in Sources */,
+				5F26DD991ED725200037680C /* DYNews.m in Sources */,
+				5F26DD8D1ED70F550037680C /* DYNewsController.m in Sources */,
+				5F26DD261ED705A20037680C /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F26DD361ED705A20037680C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F26DD3F1ED705A20037680C /* DYPlayNewsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F26DD411ED705A20037680C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5F26DD4A1ED705A20037680C /* DYPlayNewsUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		5F26DD3C1ED705A20037680C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F26DD201ED705A20037680C /* DYPlayNews */;
+			targetProxy = 5F26DD3B1ED705A20037680C /* PBXContainerItemProxy */;
+		};
+		5F26DD471ED705A20037680C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5F26DD201ED705A20037680C /* DYPlayNews */;
+			targetProxy = 5F26DD461ED705A20037680C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		5F26DD2D1ED705A20037680C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F26DD2E1ED705A20037680C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		5F26DD321ED705A20037680C /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				5F26DD331ED705A20037680C /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		5F26DD4C1ED705A20037680C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		5F26DD4D1ED705A20037680C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		5F26DD4F1ED705A20037680C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5924FBA3F914F7DDC7A31D6F /* Pods-DYPlayNews.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DYPlayNews/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DefaultYuan.DYPlayNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		5F26DD501ED705A20037680C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A54EB0B9858EB6B764847202 /* Pods-DYPlayNews.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = DYPlayNews/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DefaultYuan.DYPlayNews;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		5F26DD521ED705A20037680C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F855E4C8B46D8473ABFEDEAB /* Pods-DYPlayNewsTests.debug.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DYPlayNewsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DefaultYuan.DYPlayNewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DYPlayNews.app/DYPlayNews";
+			};
+			name = Debug;
+		};
+		5F26DD531ED705A20037680C /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4E9FA957DA9F22C0A55AC851 /* Pods-DYPlayNewsTests.release.xcconfig */;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = DYPlayNewsTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DefaultYuan.DYPlayNewsTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DYPlayNews.app/DYPlayNews";
+			};
+			name = Release;
+		};
+		5F26DD551ED705A20037680C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DYPlayNewsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DefaultYuan.DYPlayNewsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DYPlayNews;
+			};
+			name = Debug;
+		};
+		5F26DD561ED705A20037680C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = DYPlayNewsUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = DefaultYuan.DYPlayNewsUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = DYPlayNews;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		5F26DD1C1ED705A20037680C /* Build configuration list for PBXProject "DYPlayNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F26DD4C1ED705A20037680C /* Debug */,
+				5F26DD4D1ED705A20037680C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F26DD4E1ED705A20037680C /* Build configuration list for PBXNativeTarget "DYPlayNews" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F26DD4F1ED705A20037680C /* Debug */,
+				5F26DD501ED705A20037680C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F26DD511ED705A20037680C /* Build configuration list for PBXNativeTarget "DYPlayNewsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F26DD521ED705A20037680C /* Debug */,
+				5F26DD531ED705A20037680C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5F26DD541ED705A20037680C /* Build configuration list for PBXNativeTarget "DYPlayNewsUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5F26DD551ED705A20037680C /* Debug */,
+				5F26DD561ED705A20037680C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 5F26DD191ED705A20037680C /* Project object */;
+}

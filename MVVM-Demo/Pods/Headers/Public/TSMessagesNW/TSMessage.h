@@ -1,0 +1,1 @@
+../../../TSMessagesNW/Pod/Classes/TSMessage.h

@@ -1,0 +1,29 @@
+# Uncomment this line to define a global platform for your project
+platform :ios, '7.0'
+source 'https://github.com/CocoaPods/Specs.git'
+# Uncomment this line if you're using Swift
+# use_frameworks!
+inhibit_all_warnings!
+
+target ‘DYPlayNews' do
+    pod 'AFNetworking', :git => 'https://github.com/AFNetworking/AFNetworking.git', :tag =>'2.6.3'
+    pod 'Mantle', '~> 1.5.7'
+    pod 'ReactiveCocoa', '~> 2.3.1'
+    pod 'SDWebImage', '~> 3.7'
+    pod 'TSMessagesNW', '~> 0.9.15'
+    pod 'MJRefresh', '~> 3.0.4'
+end
+
+target ‘DYPlayNewsTests' do
+
+end
+
+post_install do |installer_representation|
+    installer_representation.pods_project.targets.each do |target|
+        if target.name == "AFNetworking"
+            target.build_configurations.each do |config|
+                config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= ['$(inherited)', 'AF_APP_EXTENSIONS=1']
+            end
+        end
+    end
+end

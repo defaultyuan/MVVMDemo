@@ -1,0 +1,70 @@
+PODS:
+  - AFNetworking (2.6.3):
+    - AFNetworking/NSURLConnection (= 2.6.3)
+    - AFNetworking/NSURLSession (= 2.6.3)
+    - AFNetworking/Reachability (= 2.6.3)
+    - AFNetworking/Security (= 2.6.3)
+    - AFNetworking/Serialization (= 2.6.3)
+    - AFNetworking/UIKit (= 2.6.3)
+  - AFNetworking/NSURLConnection (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.6.3):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.6.3)
+  - AFNetworking/Security (2.6.3)
+  - AFNetworking/Serialization (2.6.3)
+  - AFNetworking/UIKit (2.6.3):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - HexColors (2.3.0)
+  - Mantle (1.5.8):
+    - Mantle/extobjc (= 1.5.8)
+  - Mantle/extobjc (1.5.8)
+  - MJRefresh (3.0.8)
+  - ReactiveCocoa (2.3.1):
+    - ReactiveCocoa/UI (= 2.3.1)
+  - ReactiveCocoa/Core (2.3.1):
+    - ReactiveCocoa/no-arc
+  - ReactiveCocoa/no-arc (2.3.1)
+  - ReactiveCocoa/UI (2.3.1):
+    - ReactiveCocoa/Core
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - TSMessagesNW (0.9.15):
+    - HexColors (~> 2.3.0)
+
+DEPENDENCIES:
+  - AFNetworking (from `https://github.com/AFNetworking/AFNetworking.git`, tag `2.6.3`)
+  - Mantle (~> 1.5.7)
+  - MJRefresh (~> 3.0.4)
+  - ReactiveCocoa (~> 2.3.1)
+  - SDWebImage (~> 3.7)
+  - TSMessagesNW (~> 0.9.15)
+
+EXTERNAL SOURCES:
+  AFNetworking:
+    :git: https://github.com/AFNetworking/AFNetworking.git
+    :tag: 2.6.3
+
+CHECKOUT OPTIONS:
+  AFNetworking:
+    :git: https://github.com/AFNetworking/AFNetworking.git
+    :tag: 2.6.3
+
+SPEC CHECKSUMS:
+  AFNetworking: 4e7e2ee63993f6aa0bbad6f8bb7641d9bfa85652
+  HexColors: f572446cde834a890f57647ef3bef6e0437364f9
+  Mantle: b9a6ebf89f89d619cdafa082667f0aa46b5a2efd
+  MJRefresh: cb9214e5b375029859c773de6da9d4ec40da05f2
+  ReactiveCocoa: 99af22bbc387267933faeb862d5b2c20b52ca43a
+  SDWebImage: 7581bb998a64e64439a23333b27b9849945d6e73
+  TSMessagesNW: 1a81e659f2d80d31c2572dc21aabed3b4084b790
+
+PODFILE CHECKSUM: ef0d2d8810d144e721938a23786b1ef31c46ca1e
+
+COCOAPODS: 1.2.1
