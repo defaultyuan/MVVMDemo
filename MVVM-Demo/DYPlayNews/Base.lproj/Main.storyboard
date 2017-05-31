@@ -22,7 +22,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="4L8-Z8-aHY"/>
+                    <navigationItem key="navigationItem" title="精选" id="4L8-Z8-aHY"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="tKz-Lp-1SK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -41,7 +41,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="pjb-CH-tgQ"/>
+                    <navigationItem key="navigationItem" title="社区" id="pjb-CH-tgQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C3a-Tv-6Df" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -60,7 +60,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="FXh-lQ-2Pb"/>
+                    <navigationItem key="navigationItem" title="我的" id="FXh-lQ-2Pb"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cYR-CT-2nY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -79,7 +79,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
-                    <navigationItem key="navigationItem" id="QGl-jd-FPy"/>
+                    <navigationItem key="navigationItem" title="资讯" id="QGl-jd-FPy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fY4-Ey-QJe" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -152,9 +152,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="ozx-xR-IaV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <textAttributes key="titleTextAttributes">
-                            <color key="textColor" red="0.96078431369999995" green="0.27450980390000002" blue="0.2274509804" alpha="1" colorSpace="calibratedRGB"/>
-                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -171,7 +168,7 @@
                 <navigationController title="精选" automaticallyAdjustsScrollViewInsets="NO" id="VGP-Ha-Rd2" customClass="DYNavigationController" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="精选" image="icon_jx_nomal_pgall" selectedImage="icon_jx_pressed_pgall" id="70H-dL-2iR"/>
                     <toolbarItems/>
-                    <navigationBar key="navigationBar" contentMode="scaleToFill" misplaced="YES" id="b2e-Bm-lpY">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="b2e-Bm-lpY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="titleTextAttributes">
