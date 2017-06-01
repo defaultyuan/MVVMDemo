@@ -10,4 +10,8 @@
 
 @implementation DYNews
 
++ (NSDictionary *)JSONKeyPathsByPropertyKey
+{
+    return @{};
+}
 @end

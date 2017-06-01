@@ -7,7 +7,21 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <ReactiveCocoa/ReactiveCocoa.h>
+#import "DYRequestManager.h"
+
+extern NSString *const NewsListURLString;
+extern NSString *const NewsDetailURLString;
+
+extern NSString *const NewsRecommendTopicURLString;
+extern NSString *const NewsRecommendImageInfosURLString;
+
+extern NSString *const HotGameZoneURLString;
+extern NSString *const ZoneDiscuzURLString;
+extern NSString *const DiscuzDetailURLString;
+extern NSString *const ZoneDiscuzImageURLString;
 
 @interface DYBaseViewModel : NSObject
 
+@property (nonatomic)  NSUInteger pageSize;
 @end
