@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "DYClient+News.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,15 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+    
+//    DYClient *client = [DYClient new];
+//    client.topId = @"T1461396384709";
+//    client.pageIndex = 4;
+//    client.pageSize = 20;
+//    [[client fetchNewsData] subscribeNext:^(id x) {
+//        NSLog(@"newsData:%@",x);
+//    }];
+    
     return YES;
 }
 

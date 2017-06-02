@@ -13,17 +13,17 @@
 - (RACSignal *)fetchNewsData
 {
     return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
+        NSParameterAssert(self.topId!=nil);
+        NSParameterAssert(self.pageIndex!=0);
+        NSParameterAssert(self.pageSize!=0);
         
-        self.pageSize = 20;
         NSString *newURL = [NSString stringWithFormat:@"%@/%@/%zd/%zd",NewsListURLString,self.topId,self.pageIndex * self.pageSize, self.pageSize];
-        
         [[DYRequestManager manager] doRequestMethod:@"get" url:newURL params:nil success:^(id responseObject) {
-            [subscriber sendNext:nil];
+            [subscriber sendNext:responseObject];
             [subscriber sendCompleted];
         } failure:^(NSError *error) {
             [subscriber sendError:error];
         }];
-        
         return nil;
     }];
 

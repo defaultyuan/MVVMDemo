@@ -44,7 +44,7 @@
         [self.manager POST:_allURLString
                 parameters:paramDict
                    success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
-                       NSDictionary *responseDict = [self dictionaryWithRespondData:responseObject];
+                       NSDictionary *responseDict = (NSDictionary *)responseObject;
                        success(responseDict);  }
                    failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {
                        failure(error);  }];
@@ -56,7 +56,7 @@
         [self.manager GET:_allURLString
                parameters:paramDict
                   success:^(AFHTTPRequestOperation * _Nonnull operation, id  _Nonnull responseObject) {
-                      NSDictionary *responseDict = [self dictionaryWithRespondData:responseObject];
+                      NSDictionary *responseDict = (NSDictionary *)responseObject;
                       success(responseDict); }
                   failure:^(AFHTTPRequestOperation * _Nullable operation, NSError * _Nonnull error) {
                       failure(error); }];
