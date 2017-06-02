@@ -37,6 +37,9 @@ PODS:
   - SDWebImage/Core (3.8.2)
   - TSMessagesNW (0.9.15):
     - HexColors (~> 2.3.0)
+  - VTMagic (1.2.4):
+    - VTMagic/Core (= 1.2.4)
+  - VTMagic/Core (1.2.4)
 
 DEPENDENCIES:
   - AFNetworking (from `https://github.com/AFNetworking/AFNetworking.git`, tag `2.6.3`)
@@ -45,6 +48,7 @@ DEPENDENCIES:
   - ReactiveCocoa (~> 2.3.1)
   - SDWebImage (~> 3.7)
   - TSMessagesNW (~> 0.9.15)
+  - VTMagic
 
 EXTERNAL SOURCES:
   AFNetworking:
@@ -64,7 +68,8 @@ SPEC CHECKSUMS:
   ReactiveCocoa: 99af22bbc387267933faeb862d5b2c20b52ca43a
   SDWebImage: 7581bb998a64e64439a23333b27b9849945d6e73
   TSMessagesNW: 1a81e659f2d80d31c2572dc21aabed3b4084b790
+  VTMagic: 1b407f350945c38d71142aa39c4516b2be880172
 
-PODFILE CHECKSUM: ef0d2d8810d144e721938a23786b1ef31c46ca1e
+PODFILE CHECKSUM: 4ab0cccfac77654d15625f7719f71fcbeb3295e0
 
 COCOAPODS: 1.2.1

@@ -12,6 +12,7 @@ target ‘DYPlayNews' do
     pod 'SDWebImage', '~> 3.7'
     pod 'TSMessagesNW', '~> 0.9.15'
     pod 'MJRefresh', '~> 3.0.4'
+    pod 'VTMagic'
 end
 
 target ‘DYPlayNewsTests' do

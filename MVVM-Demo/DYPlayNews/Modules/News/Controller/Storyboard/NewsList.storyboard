@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12120" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12088"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--News List Controller-->
+        <scene sceneID="gsn-LG-VFt">
+            <objects>
+                <viewController id="RMI-9T-DuC" customClass="DYNewsListController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="MIf-mK-Jxh"/>
+                        <viewControllerLayoutGuide type="bottom" id="r3g-XC-swm"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="BjR-JW-V6m">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="GSj-Is-HUq">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="120" id="adW-jc-M8U" customClass="DYNewsListCell">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="120"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="adW-jc-M8U" id="Wkd-dr-yKq">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ij0-xw-wHZ">
+                                                    <rect key="frame" x="13" y="13" width="125" height="93.5"/>
+                                                </imageView>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5nG-kE-xn0">
+                                                    <rect key="frame" x="143" y="91.5" width="32" height="15"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="15" id="8z7-hE-luF"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                                    <state key="normal" title=" 133" image="common_chat_new">
+                                                        <color key="titleColor" red="0.16862745100000001" green="0.1843137255" blue="0.20000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    </state>
+                                                </button>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="大战一触即发大战一触即发大战一触即发大战一触即发大战一触即发大战一触即发" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="81F-Ms-KMd">
+                                                    <rect key="frame" x="143" y="13" width="219" height="57.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="5nG-kE-xn0" firstAttribute="leading" secondItem="Ij0-xw-wHZ" secondAttribute="trailing" constant="5" id="ACO-dY-ifh"/>
+                                                <constraint firstItem="5nG-kE-xn0" firstAttribute="bottom" secondItem="Ij0-xw-wHZ" secondAttribute="bottom" id="ExU-oT-dZH"/>
+                                                <constraint firstItem="Ij0-xw-wHZ" firstAttribute="leading" secondItem="Wkd-dr-yKq" secondAttribute="leadingMargin" constant="5" id="NH5-MK-Kk2"/>
+                                                <constraint firstItem="5nG-kE-xn0" firstAttribute="leading" secondItem="81F-Ms-KMd" secondAttribute="leading" id="RbU-Bx-vxH"/>
+                                                <constraint firstItem="Ij0-xw-wHZ" firstAttribute="top" secondItem="Wkd-dr-yKq" secondAttribute="topMargin" constant="5" id="SKi-wo-UtS"/>
+                                                <constraint firstItem="Ij0-xw-wHZ" firstAttribute="width" secondItem="Wkd-dr-yKq" secondAttribute="width" multiplier="1:3" id="dfJ-tX-b9j"/>
+                                                <constraint firstItem="81F-Ms-KMd" firstAttribute="top" secondItem="Ij0-xw-wHZ" secondAttribute="top" id="fbB-2N-hYc"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Ij0-xw-wHZ" secondAttribute="bottom" constant="5" id="tDN-gE-rhv"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="81F-Ms-KMd" secondAttribute="trailing" constant="5" id="tsh-6P-vYA"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="commentCount" destination="5nG-kE-xn0" id="gjG-sv-fGw"/>
+                                            <outlet property="iconImageView" destination="Ij0-xw-wHZ" id="Q9Z-mK-hxC"/>
+                                            <outlet property="titleLabel" destination="81F-Ms-KMd" id="hXf-uw-k2p"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="GSj-Is-HUq" firstAttribute="leading" secondItem="BjR-JW-V6m" secondAttribute="leading" id="JIa-Mt-FwE"/>
+                            <constraint firstAttribute="trailing" secondItem="GSj-Is-HUq" secondAttribute="trailing" id="LXw-yF-IBX"/>
+                            <constraint firstItem="GSj-Is-HUq" firstAttribute="top" secondItem="BjR-JW-V6m" secondAttribute="top" id="PAt-bm-8Qu"/>
+                            <constraint firstAttribute="bottom" secondItem="GSj-Is-HUq" secondAttribute="bottom" id="eZ5-Gn-4a6"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="tableView" destination="GSj-Is-HUq" id="IKT-8v-yHD"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="R7g-ed-iiK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-305" y="65"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="common_chat_new" width="11" height="10"/>
+    </resources>
+</document>
