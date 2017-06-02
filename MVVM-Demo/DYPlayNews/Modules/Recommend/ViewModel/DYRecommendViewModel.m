@@ -10,35 +10,4 @@
 
 @implementation DYRecommendViewModel
 
-- (RACSignal *)fetchRecommendTopicList
-{
-    return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-        
-        [[DYRequestManager manager] doRequestMethod:@"get" url:NewsRecommendTopicURLString params:nil success:^(id responseObject) {
-            
-            [subscriber sendNext:nil];
-            [subscriber sendCompleted];
-        } failure:^(NSError *error) {
-            
-            [subscriber sendError:error];
-        }];
-        
-        return nil;
-    }];
-}
-
-- (RACSignal *)fetchRecommendImageInfos
-{
-    return [RACSignal createSignal:^RACDisposable *(id<RACSubscriber> subscriber) {
-        [[DYRequestManager manager] doRequestMethod:@"get" url:NewsRecommendImageInfosURLString params:nil success:^(id responseObject) {
-            [subscriber sendNext:nil];
-            [subscriber sendCompleted];
-        } failure:^(NSError *error) {
-            [subscriber sendError:error];
-        }];
-        
-        return nil;
-    }];
-}
-
 @end

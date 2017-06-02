@@ -10,6 +10,4 @@
 
 @interface DYNewsViewModel : DYBaseViewModel
 
-- (RACSignal *) fetchNewsDataWithId:(NSString *)topId pageIndex:(NSUInteger)pageIndex;
-- (RACSignal *) fetchNewsDetailWithId:(NSString *)newsId;
 @end

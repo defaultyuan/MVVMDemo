@@ -10,6 +10,4 @@
 
 @interface DYRecommendViewModel : DYBaseViewModel
 
-- (RACSignal *) fetchRecommendTopicList;
-- (RACSignal *) fetchRecommendImageInfos;
 @end

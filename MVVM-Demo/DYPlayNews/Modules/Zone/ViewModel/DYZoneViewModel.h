@@ -10,11 +10,4 @@
 
 @interface DYZoneViewModel : DYBaseViewModel
 
-- (RACSignal *) fetchHotZoneWithPageIndex:(NSUInteger)pageIndex;
-- (RACSignal *) fetchZoneDiscuzWithIndex:(NSUInteger)index;
-- (RACSignal *) fetchDiscuzImageWithFid:(NSString *)fid;
-- (RACSignal *) fetchDiscuzListWithFid:(NSString *)fid index:(NSUInteger)index;
-- (RACSignal *) fetchDiscuzDetailWithTid:(NSString *)tid
-                                   index:(NSUInteger)index
-                                pageSize:(NSUInteger)pageSize;
 @end
