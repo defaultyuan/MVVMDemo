@@ -40,6 +40,7 @@ PODS:
   - VTMagic (1.2.4):
     - VTMagic/Core (= 1.2.4)
   - VTMagic/Core (1.2.4)
+  - YYCache (1.0.4)
 
 DEPENDENCIES:
   - AFNetworking (from `https://github.com/AFNetworking/AFNetworking.git`, tag `2.6.3`)
@@ -49,6 +50,7 @@ DEPENDENCIES:
   - SDWebImage (~> 3.7)
   - TSMessagesNW (~> 0.9.15)
   - VTMagic
+  - YYCache
 
 EXTERNAL SOURCES:
   AFNetworking:
@@ -69,7 +71,8 @@ SPEC CHECKSUMS:
   SDWebImage: 7581bb998a64e64439a23333b27b9849945d6e73
   TSMessagesNW: 1a81e659f2d80d31c2572dc21aabed3b4084b790
   VTMagic: 1b407f350945c38d71142aa39c4516b2be880172
+  YYCache: 5eadab13c6e585b65bc66fa537b8d946106b4cd6
 
-PODFILE CHECKSUM: 4ab0cccfac77654d15625f7719f71fcbeb3295e0
+PODFILE CHECKSUM: 47c5ce567d3c866aeb880ceeac33ccabf928695c
 
 COCOAPODS: 1.2.1

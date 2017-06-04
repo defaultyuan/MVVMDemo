@@ -6,8 +6,8 @@
 //  Copyright © 2017年 https://github.com/DefaultYuan All rights reserved.
 //
 
-#import "DYBaseViewController.h"
+#import <VTMagic/VTMagic.h>
 
-@interface DYNewsController : DYBaseViewController
+@interface DYNewsController : VTMagicController
 
 @end
