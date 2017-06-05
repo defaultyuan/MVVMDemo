@@ -13,7 +13,6 @@
 
 @interface DYNewsViewModel ()
 
-@property (nonatomic) NSArray *news; /**< 新闻列表 */
 @end
 
 @implementation DYNewsViewModel
@@ -23,15 +22,10 @@
     self = [super init];
     if (self) {
 
-        RAC(self, news) = [self.fetchDataCommand.executionSignals.switchToLatest doNext:^(NSArray *news)
-        {
-            NSMutableArray *datas = [NSMutableArray array];
-            for (DYNews *e in news) {
-                DYNewsListCellModel *vm = [[DYNewsListCellModel alloc] initWithEntity:e];
-                [datas addObject:vm];
-            }
-            self.dataSource = [datas copy];
-            NSLog(@"dataSource:%@",self.dataSource);
+        RAC(self, dataSource) = [self.fetchDataCommand.executionSignals.switchToLatest map:^id(NSArray *news) {
+            return [news.rac_sequence map:^id(DYNews *e) {
+                return [[DYNewsListCellModel alloc] initWithEntity:e];
+            }].array;
         }];
         
     }
