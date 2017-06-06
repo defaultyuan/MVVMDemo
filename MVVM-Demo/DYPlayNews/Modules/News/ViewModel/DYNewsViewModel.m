@@ -10,6 +10,7 @@
 #import "DYClient+News.h"
 #import "DYNews.h"
 #import "DYNewsListCellModel.h"
+#import "DYNewsImageCellModel.h"
 
 @interface DYNewsViewModel ()
 
@@ -24,7 +25,12 @@
 
         RAC(self, dataSource) = [self.fetchDataCommand.executionSignals.switchToLatest map:^id(NSArray *news) {
             return [news.rac_sequence map:^id(DYNews *e) {
-                return [[DYNewsListCellModel alloc] initWithEntity:e];
+                if (e.showType == 2) {
+                    return [[DYNewsImageCellModel alloc] initWithEntity:e];
+                } else {
+                    return [[DYNewsListCellModel alloc] initWithEntity:e];
+                }
+                
             }].array;
         }];
         

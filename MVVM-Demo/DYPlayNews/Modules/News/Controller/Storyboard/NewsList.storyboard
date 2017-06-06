@@ -72,29 +72,29 @@
                                             <outlet property="titleLabel" destination="81F-Ms-KMd" id="hXf-uw-k2p"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="120" id="NUv-df-XQU" customClass="DYNewListImageCell">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DYNewListImageCell" rowHeight="120" id="NUv-df-XQU" customClass="DYNewListImageCell">
                                         <rect key="frame" x="0.0" y="72" width="375" height="120"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="NUv-df-XQU" id="7FS-BR-mfh">
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="119.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新闻新闻" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YkT-27-7oz">
-                                                    <rect key="frame" x="5" y="5" width="365" height="21"/>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="新闻新闻" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YkT-27-7oz">
+                                                    <rect key="frame" x="13" y="10" width="349" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="aUa-Iv-p1S">
-                                                    <rect key="frame" x="5" y="31" width="365" height="83.5"/>
+                                                    <rect key="frame" x="13" y="36" width="357" height="78.5"/>
                                                 </imageView>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstAttribute="trailing" secondItem="aUa-Iv-p1S" secondAttribute="trailing" constant="5" id="4Ld-8U-mnM"/>
-                                                <constraint firstItem="YkT-27-7oz" firstAttribute="top" secondItem="7FS-BR-mfh" secondAttribute="top" constant="5" id="4Xc-5o-oZi"/>
-                                                <constraint firstItem="YkT-27-7oz" firstAttribute="leading" secondItem="7FS-BR-mfh" secondAttribute="leading" constant="5" id="C8X-xx-5g3"/>
+                                                <constraint firstItem="YkT-27-7oz" firstAttribute="top" secondItem="7FS-BR-mfh" secondAttribute="top" constant="10" id="4Xc-5o-oZi"/>
+                                                <constraint firstItem="YkT-27-7oz" firstAttribute="leading" secondItem="7FS-BR-mfh" secondAttribute="leading" constant="13" id="C8X-xx-5g3"/>
                                                 <constraint firstItem="aUa-Iv-p1S" firstAttribute="top" secondItem="YkT-27-7oz" secondAttribute="bottom" constant="5" id="FzR-Yj-G29"/>
-                                                <constraint firstAttribute="trailing" secondItem="YkT-27-7oz" secondAttribute="trailing" constant="5" id="GdA-JD-giP"/>
+                                                <constraint firstAttribute="trailing" secondItem="YkT-27-7oz" secondAttribute="trailing" constant="13" id="GdA-JD-giP"/>
                                                 <constraint firstItem="aUa-Iv-p1S" firstAttribute="leading" secondItem="YkT-27-7oz" secondAttribute="leading" id="c2P-pK-1E2"/>
                                                 <constraint firstAttribute="bottom" secondItem="aUa-Iv-p1S" secondAttribute="bottom" constant="5" id="tif-36-koa"/>
                                             </constraints>

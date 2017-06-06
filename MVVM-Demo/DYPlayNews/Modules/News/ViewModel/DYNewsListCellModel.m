@@ -12,16 +12,6 @@
 
 @implementation DYNewsListCellModel
 
-- (instancetype)initWithEntity:(DYNews *)newsEntity
-{
-    self = [super init];
-    if (self) {
-        
-        _entity = newsEntity;
-    }
-    return self;
-}
-
 - (NSString *)cellIdentifier
 {
     return [DYNewsListCell nibId];

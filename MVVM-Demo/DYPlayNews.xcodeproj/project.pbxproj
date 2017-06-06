@@ -45,6 +45,8 @@
 		5FCB8B491EE40CAA00FCAE87 /* DYBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCB8B441EE40CAA00FCAE87 /* DYBaseViewController.m */; };
 		5FCB8B4A1EE40CAA00FCAE87 /* DYBaseViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCB8B461EE40CAA00FCAE87 /* DYBaseViewModel.m */; };
 		5FCB8B531EE4131100FCAE87 /* UIView+DYY.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FCB8B521EE4131100FCAE87 /* UIView+DYY.m */; };
+		5FD2F5201EE62ACE00A5DADC /* DYNewsImageCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD2F51F1EE62ACE00A5DADC /* DYNewsImageCellModel.m */; };
+		5FD2F5231EE62B1800A5DADC /* DYBaseCellModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FD2F5221EE62B1800A5DADC /* DYBaseCellModel.m */; };
 		6A145A90A1146A0C943B8C08 /* libPods-DYPlayNewsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = B6792160B055A5D11090CC02 /* libPods-DYPlayNewsTests.a */; };
 		F305F5488744563C89B4B39A /* libPods-DYPlayNews.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 114986185651D99D9693DE64 /* libPods-DYPlayNews.a */; };
 /* End PBXBuildFile section */
@@ -150,6 +152,10 @@
 		5FD2F51B1EE628A700A5DADC /* DYCellProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYCellProtocol.h; sourceTree = "<group>"; };
 		5FD2F51C1EE628A700A5DADC /* DYCellRenderProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYCellRenderProtocol.h; sourceTree = "<group>"; };
 		5FD2F51D1EE628A700A5DADC /* DYTableViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYTableViewProtocol.h; sourceTree = "<group>"; };
+		5FD2F51E1EE62ACE00A5DADC /* DYNewsImageCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYNewsImageCellModel.h; sourceTree = "<group>"; };
+		5FD2F51F1EE62ACE00A5DADC /* DYNewsImageCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYNewsImageCellModel.m; sourceTree = "<group>"; };
+		5FD2F5211EE62B1800A5DADC /* DYBaseCellModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYBaseCellModel.h; sourceTree = "<group>"; };
+		5FD2F5221EE62B1800A5DADC /* DYBaseCellModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYBaseCellModel.m; sourceTree = "<group>"; };
 		A54EB0B9858EB6B764847202 /* Pods-DYPlayNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYPlayNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-DYPlayNews/Pods-DYPlayNews.release.xcconfig"; sourceTree = "<group>"; };
 		B6792160B055A5D11090CC02 /* libPods-DYPlayNewsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DYPlayNewsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F855E4C8B46D8473ABFEDEAB /* Pods-DYPlayNewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYPlayNewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DYPlayNewsTests/Pods-DYPlayNewsTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -432,6 +438,8 @@
 				5F0D9F2F1EDFF6BF00FFBF7D /* DYNewsViewModel.m */,
 				5FCB8B3B1EE408F200FCAE87 /* DYNewsListCellModel.h */,
 				5FCB8B3C1EE408F200FCAE87 /* DYNewsListCellModel.m */,
+				5FD2F51E1EE62ACE00A5DADC /* DYNewsImageCellModel.h */,
+				5FD2F51F1EE62ACE00A5DADC /* DYNewsImageCellModel.m */,
 			);
 			path = ViewModel;
 			sourceTree = "<group>";
@@ -577,6 +585,8 @@
 				5FCB8B441EE40CAA00FCAE87 /* DYBaseViewController.m */,
 				5FCB8B451EE40CAA00FCAE87 /* DYBaseViewModel.h */,
 				5FCB8B461EE40CAA00FCAE87 /* DYBaseViewModel.m */,
+				5FD2F5211EE62B1800A5DADC /* DYBaseCellModel.h */,
+				5FD2F5221EE62B1800A5DADC /* DYBaseCellModel.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -851,6 +861,7 @@
 				5F4BAD511EDF189D00F69AB6 /* DYRequestManager.m in Sources */,
 				5F2AFFA11EE06AD00017540B /* DYNewsListController.m in Sources */,
 				5F26DD791ED70D340037680C /* DYTabBarController.m in Sources */,
+				5FD2F5231EE62B1800A5DADC /* DYBaseCellModel.m in Sources */,
 				5F26DD901ED70FBC0037680C /* DYNavigationController.m in Sources */,
 				5F26DD291ED705A20037680C /* AppDelegate.m in Sources */,
 				5F0D9F301EDFF6BF00FFBF7D /* DYNewsViewModel.m in Sources */,
@@ -866,6 +877,7 @@
 				5FCB8B4A1EE40CAA00FCAE87 /* DYBaseViewModel.m in Sources */,
 				5F2AFFA91EE06C0E0017540B /* DYNewsListCell.m in Sources */,
 				5F0D9F371EE0137A00FFBF7D /* DYRecommendViewModel.m in Sources */,
+				5FD2F5201EE62ACE00A5DADC /* DYNewsImageCellModel.m in Sources */,
 				5F63E8D51EE14C10006F97A7 /* DYClient+Mine.m in Sources */,
 				5F26DD8A1ED70F3D0037680C /* DYRecommendController.m in Sources */,
 				5F62B0C41EE29D190002E0C0 /* DYNewListImageCell.m in Sources */,

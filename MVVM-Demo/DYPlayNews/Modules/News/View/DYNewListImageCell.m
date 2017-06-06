@@ -7,15 +7,28 @@
 //
 
 #import "DYNewListImageCell.h"
+#import "DYNewsImageCellModel.h"
+#import "DYNews.h"
+
+@interface DYNewListImageCell ()
+
+@property (weak, nonatomic) IBOutlet UILabel *titleLabel;
+@property (weak, nonatomic) IBOutlet UIImageView *bigImageView;
+@end
 
 @implementation DYNewListImageCell
 
-/*
-// Only override drawRect: if you perform custom drawing.
-// An empty implementation adversely affects performance during animation.
-- (void)drawRect:(CGRect)rect {
-    // Drawing code
+- (void)bindViewModel:(DYNewsImageCellModel *)viewModel {
+    
+    DYNews *entity = (DYNews *)viewModel.entity;
+    [self.bigImageView sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@?w=750&h=20000&quality=75",entity.imgsrc.firstObject]]];
+    
+    RAC(self.titleLabel, text) = [RACObserve(entity, title) takeUntil:self.rac_prepareForReuseSignal];
 }
-*/
+
++ (CGFloat) heightForViewModel:(id<DYCellRenderProtocol>)viewModel
+{
+    return 170;
+}
 
 @end

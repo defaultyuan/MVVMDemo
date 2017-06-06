@@ -21,9 +21,10 @@
 
 - (void)bindViewModel:(DYNewsListCellModel *)viewModel {
 
-    [self.iconImageView sd_setImageWithURL:[NSURL URLWithString:viewModel.entity.imgsrc.firstObject]];
-    [self.commentCount setTitle:[NSString stringWithFormat:@" %zd",viewModel.entity.replyCount] forState:UIControlStateNormal];
-    RAC(self.titleLabel, text) = [RACObserve(viewModel.entity, title) takeUntil:self.rac_prepareForReuseSignal];
+    DYNews *entity = (DYNews *)viewModel.entity;
+    [self.iconImageView sd_setImageWithURL:[NSURL URLWithString:entity.imgsrc.firstObject]];
+    [self.commentCount setTitle:[NSString stringWithFormat:@" %zd",entity.replyCount] forState:UIControlStateNormal];
+    RAC(self.titleLabel, text) = [RACObserve(entity, title) takeUntil:self.rac_prepareForReuseSignal];
 }
 
 + (CGFloat) heightForViewModel:(id<DYCellRenderProtocol>)viewModel
