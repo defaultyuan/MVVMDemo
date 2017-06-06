@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DYBaseViewModel.h"
+#import "DYTableViewProtocol.h"
 
 @interface DYBaseViewController : UIViewController
 
+- (void) prepareLoadData;
+@property (nonatomic, strong, readwrite) DYBaseViewModel<DYViewModelProtocol> *viewModel;
 @end

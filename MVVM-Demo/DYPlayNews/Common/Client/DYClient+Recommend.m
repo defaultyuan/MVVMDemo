@@ -7,12 +7,13 @@
 //
 
 #import "DYClient+Recommend.h"
+#import "DYRecommendEntity.h"
 
 @implementation DYClient (Recommend)
 
 - (RACSignal *)fetchRecommendTopicList
 {
-    return [self requestWithMethod:@"get" url:NewsRecommendTopicURLString params:nil responseClass:[NSObject class]];
+    return [self requestWithMethod:@"get" url:NewsRecommendTopicURLString params:nil responseClass:[DYRecommendEntity class]];
 }
 
 - (RACSignal *)fetchRecommendImageInfos

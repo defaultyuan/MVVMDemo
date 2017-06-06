@@ -21,14 +21,13 @@
 - (void)bindViewModel:(DYNewsImageCellModel *)viewModel {
     
     DYNews *entity = (DYNews *)viewModel.entity;
-    [self.bigImageView sd_setImageWithURL:[NSURL URLWithString:[NSString stringWithFormat:@"%@?w=750&h=20000&quality=75",entity.imgsrc.firstObject]]];
-    
+    [self.bigImageView sd_setImageWithURL:[viewModel fitSizeImageURLWithURL:entity.imgsrc.firstObject]];
     RAC(self.titleLabel, text) = [RACObserve(entity, title) takeUntil:self.rac_prepareForReuseSignal];
 }
 
-+ (CGFloat) heightForViewModel:(id<DYCellRenderProtocol>)viewModel
++ (CGSize)sizeForViewModel:(id<DYCellRenderProtocol>)viewModel constrainedToSize:(CGSize)size
 {
-    return 170;
+    return CGSizeMake(size.width, 170);
 }
 
 @end

@@ -27,9 +27,9 @@
     RAC(self.titleLabel, text) = [RACObserve(entity, title) takeUntil:self.rac_prepareForReuseSignal];
 }
 
-+ (CGFloat) heightForViewModel:(id<DYCellRenderProtocol>)viewModel
++ (CGSize)sizeForViewModel:(id<DYCellRenderProtocol>)viewModel constrainedToSize:(CGSize)size
 {
-    return 95;
+    return CGSizeMake(size.width, 95);
 }
 
 @end

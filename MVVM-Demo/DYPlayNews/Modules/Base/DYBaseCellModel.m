@@ -22,4 +22,9 @@
     return self;
 }
 
+- (NSURL *)fitSizeImageURLWithURL:(NSString *)url
+{
+    return [NSURL URLWithString:[NSString stringWithFormat:@"%@?w=750&h=20000&quality=75",url]];
+}
+
 @end

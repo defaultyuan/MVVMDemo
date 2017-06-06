@@ -7,12 +7,7 @@
 //
 
 #import "DYBaseViewController.h"
-#import "DYBaseCell.h"
-#import "DYBaseViewModel.h"
-#import "DYTableViewProtocol.h"
 
 @interface DYBaseTableViewController : DYBaseViewController
 
-- (void) prepareLoadData;
-@property (nonatomic, strong, readwrite) DYBaseViewModel<DYViewModelProtocol> *viewModel;
 @end

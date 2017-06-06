@@ -81,8 +81,9 @@
         NSString *cellClassStr = [cellModel cellIdentifier];
         Class<DYCellProtocol> cellClass = NSClassFromString(cellClassStr);
         
-        if ([(NSObject *)cellClass respondsToSelector:@selector(heightForViewModel:)]) {
-            return [cellClass heightForViewModel:cellModel];
+        if ([(NSObject *)cellClass respondsToSelector:@selector(sizeForViewModel:constrainedToSize:)]) {
+            return [cellClass sizeForViewModel:cellModel
+                             constrainedToSize:tableView.frame.size].height;
         }
     }
     return 0;

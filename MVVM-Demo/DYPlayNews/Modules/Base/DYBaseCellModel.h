@@ -7,9 +7,12 @@
 //
 
 #import "DYBaseViewModel.h"
+#import "UIImageView+WebCache.h"
 
 @interface DYBaseCellModel<__covariant ObjectType> : DYBaseViewModel
 
 - (instancetype)initWithEntity:(ObjectType)newsEntity;
+- (NSURL *) fitSizeImageURLWithURL:(NSString *)url;
+
 @property (nonatomic, readonly) ObjectType entity;
 @end

@@ -17,6 +17,6 @@
 - (void) bindViewModel:(id<DYCellRenderProtocol>)viewModel;
 
 @optional
-///返回Cell高度
-+ (CGFloat) heightForViewModel:(id<DYCellRenderProtocol>)viewModel;
+///返回Cell的Size
++ (CGSize) sizeForViewModel:(id<DYCellRenderProtocol>)viewModel constrainedToSize:(CGSize)size;
 @end

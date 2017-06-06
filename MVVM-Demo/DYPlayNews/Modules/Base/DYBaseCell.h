@@ -8,7 +8,6 @@
 
 #import <UIKit/UIKit.h>
 #import "DYCellProtocol.h"
-#import "UIImageView+WebCache.h"
 
 @interface DYBaseCell : UITableViewCell<DYCellProtocol>
 

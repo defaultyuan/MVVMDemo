@@ -10,4 +10,5 @@
 
 @interface DYRecommendViewModel : DYBaseViewModel
 
+
 @end
