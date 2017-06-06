@@ -58,10 +58,10 @@
 }
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    id<DYCellRenderProcotol> cellModel = self.viewModel.dataSource[indexPath.row];
+    id<DYCellRenderProtocol> cellModel = self.viewModel.dataSource[indexPath.row];
     
     NSString *cellIdentifier;
-    UITableViewCell<DYCellProcotol> *cell;
+    UITableViewCell<DYCellProtocol> *cell;
     
     if ([cellModel respondsToSelector:@selector(cellIdentifier)])
     {
@@ -75,11 +75,11 @@
 
 - (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    id<DYCellRenderProcotol> cellModel = self.viewModel.dataSource[indexPath.row];
+    id<DYCellRenderProtocol> cellModel = self.viewModel.dataSource[indexPath.row];
     
     if ([cellModel respondsToSelector:@selector(cellIdentifier)]) {
         NSString *cellClassStr = [cellModel cellIdentifier];
-        Class<DYCellProcotol> cellClass = NSClassFromString(cellClassStr);
+        Class<DYCellProtocol> cellClass = NSClassFromString(cellClassStr);
         
         if ([(NSObject *)cellClass respondsToSelector:@selector(heightForViewModel:)]) {
             return [cellClass heightForViewModel:cellModel];

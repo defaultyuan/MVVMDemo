@@ -1,5 +1,5 @@
 //
-//  DYCellProcotol.h
+//  DYCellProtocol.h
 //  DYPlayNews
 //
 //  Created by 袁斌 on 2017/6/4.
@@ -8,15 +8,15 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol DYCellRenderProcotol;
+@protocol DYCellRenderProtocol;
 
-@protocol DYCellProcotol <NSObject>
+@protocol DYCellProtocol <NSObject>
 
 @required
 ///绑定数据
-- (void) bindViewModel:(id<DYCellRenderProcotol>)viewModel;
+- (void) bindViewModel:(id<DYCellRenderProtocol>)viewModel;
 
 @optional
 ///返回Cell高度
-+ (CGFloat) heightForViewModel:(id<DYCellRenderProcotol>)viewModel;
++ (CGFloat) heightForViewModel:(id<DYCellRenderProtocol>)viewModel;
 @end

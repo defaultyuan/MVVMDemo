@@ -9,7 +9,7 @@
 #import "DYBaseViewController.h"
 #import "DYBaseCell.h"
 #import "DYBaseViewModel.h"
-#import "DYTableViewProcotol.h"
+#import "DYTableViewProtocol.h"
 
 @interface DYBaseTableViewController : DYBaseViewController
 

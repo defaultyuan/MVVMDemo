@@ -1,5 +1,5 @@
 //
-//  DYCellRenderProcotol.h
+//  DYCellRenderProtocol.h
 //  DYPlayNews
 //
 //  Created by 袁斌 on 2017/6/4.
@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol DYCellRenderProcotol <NSObject>
+@protocol DYCellRenderProtocol <NSObject>
 
 @required
 ///Cell对应的重用标识

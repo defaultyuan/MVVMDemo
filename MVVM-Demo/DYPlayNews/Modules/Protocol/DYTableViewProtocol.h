@@ -8,7 +8,7 @@
 
 #import <Foundation/Foundation.h>
 
-@protocol DYTableViewProcotol <NSObject>
+@protocol DYTableViewProtocol <NSObject>
 
 @required
 - (UITableViewCell *)tableView:(UITableView *)tableView dequeueReusableCellforIndexPath:(NSIndexPath *)indexPath;

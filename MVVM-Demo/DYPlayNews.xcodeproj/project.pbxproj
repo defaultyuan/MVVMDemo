@@ -145,11 +145,11 @@
 		5FCB8B451EE40CAA00FCAE87 /* DYBaseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYBaseViewModel.h; sourceTree = "<group>"; };
 		5FCB8B461EE40CAA00FCAE87 /* DYBaseViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DYBaseViewModel.m; sourceTree = "<group>"; };
 		5FCB8B4C1EE40D1000FCAE87 /* DYViewModelProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYViewModelProtocol.h; sourceTree = "<group>"; };
-		5FCB8B4D1EE40DD900FCAE87 /* DYCellProcotol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYCellProcotol.h; sourceTree = "<group>"; };
-		5FCB8B4E1EE40E5000FCAE87 /* DYTableViewProcotol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYTableViewProcotol.h; sourceTree = "<group>"; };
-		5FCB8B4F1EE4107100FCAE87 /* DYCellRenderProcotol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DYCellRenderProcotol.h; sourceTree = "<group>"; };
 		5FCB8B511EE4131100FCAE87 /* UIView+DYY.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+DYY.h"; sourceTree = "<group>"; };
 		5FCB8B521EE4131100FCAE87 /* UIView+DYY.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+DYY.m"; sourceTree = "<group>"; };
+		5FD2F51B1EE628A700A5DADC /* DYCellProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYCellProtocol.h; sourceTree = "<group>"; };
+		5FD2F51C1EE628A700A5DADC /* DYCellRenderProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYCellRenderProtocol.h; sourceTree = "<group>"; };
+		5FD2F51D1EE628A700A5DADC /* DYTableViewProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DYTableViewProtocol.h; sourceTree = "<group>"; };
 		A54EB0B9858EB6B764847202 /* Pods-DYPlayNews.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYPlayNews.release.xcconfig"; path = "Pods/Target Support Files/Pods-DYPlayNews/Pods-DYPlayNews.release.xcconfig"; sourceTree = "<group>"; };
 		B6792160B055A5D11090CC02 /* libPods-DYPlayNewsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-DYPlayNewsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F855E4C8B46D8473ABFEDEAB /* Pods-DYPlayNewsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-DYPlayNewsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-DYPlayNewsTests/Pods-DYPlayNewsTests.debug.xcconfig"; sourceTree = "<group>"; };
@@ -585,9 +585,9 @@
 			isa = PBXGroup;
 			children = (
 				5FCB8B4C1EE40D1000FCAE87 /* DYViewModelProtocol.h */,
-				5FCB8B4D1EE40DD900FCAE87 /* DYCellProcotol.h */,
-				5FCB8B4E1EE40E5000FCAE87 /* DYTableViewProcotol.h */,
-				5FCB8B4F1EE4107100FCAE87 /* DYCellRenderProcotol.h */,
+				5FD2F51B1EE628A700A5DADC /* DYCellProtocol.h */,
+				5FD2F51C1EE628A700A5DADC /* DYCellRenderProtocol.h */,
+				5FD2F51D1EE628A700A5DADC /* DYTableViewProtocol.h */,
 			);
 			path = Protocol;
 			sourceTree = "<group>";

@@ -21,6 +21,6 @@
     // Configure the view for the selected state
 }
 
-- (void)bindViewModel:(id<DYCellRenderProcotol>)viewModel {}
+- (void)bindViewModel:(id<DYCellRenderProtocol>)viewModel {}
 
 @end

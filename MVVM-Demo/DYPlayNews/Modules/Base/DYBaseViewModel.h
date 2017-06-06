@@ -9,10 +9,10 @@
 #import <Foundation/Foundation.h>
 #import <ReactiveCocoa/ReactiveCocoa.h>
 #import "DYViewModelProtocol.h"
-#import "DYCellRenderProcotol.h"
+#import "DYCellRenderProtocol.h"
 #import "UIView+DYY.h"
 
-@interface DYBaseViewModel : NSObject<DYViewModelProtocol, DYCellRenderProcotol>
+@interface DYBaseViewModel : NSObject<DYViewModelProtocol, DYCellRenderProtocol>
 
 @property (nonatomic)  NSUInteger pageIndex;
 @property (nonatomic) NSUInteger pageSize;

@@ -7,9 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "DYCellProcotol.h"
+#import "DYCellProtocol.h"
 #import "UIImageView+WebCache.h"
 
-@interface DYBaseCell : UITableViewCell<DYCellProcotol>
+@interface DYBaseCell : UITableViewCell<DYCellProtocol>
 
 @end
