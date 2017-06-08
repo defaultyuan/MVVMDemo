@@ -1,5 +1,5 @@
 # MVVMDemo
-MVVMDemo With ReactiveCocoa
+MVVMDemo With ReactiveCocoa (仿照爱玩APP)
 
 ##资讯
 
