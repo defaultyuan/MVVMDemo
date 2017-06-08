@@ -11,5 +11,5 @@
 @protocol DYTableViewProtocol <NSObject>
 
 @required
-- (UITableViewCell *)tableView:(UITableView *)tableView dequeueReusableCellforIndexPath:(NSIndexPath *)indexPath;
+- (UITableView *) tableView;
 @end

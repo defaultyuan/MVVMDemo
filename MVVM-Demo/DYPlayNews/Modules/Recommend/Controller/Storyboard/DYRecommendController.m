@@ -18,11 +18,12 @@
 @implementation DYRecommendController
 
 - (void)viewDidLoad {
+
+    [super viewDidLoad];
     
     self.viewModel = [[DYRecommendViewModel alloc] init];
     
-    [super viewDidLoad];
-    
+    [self prepareLoadData];
 }
 
 - (void)prepareLoadData

@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import <ReactiveCocoa/ReactiveCocoa.h>
+#import "DYCellProtocol.h"
 #import "DYViewModelProtocol.h"
 #import "DYCellRenderProtocol.h"
 #import "UIView+DYY.h"

@@ -8,8 +8,9 @@
 
 #import "DYBaseTableViewController.h"
 #import "MJRefreshGifHeader+DYY.h"
+#import "DYBaseViewModel.h"
 
-@interface DYBaseTableViewController ()
+@interface DYBaseTableViewController ()<UITableViewDelegate, UITableViewDataSource, DYTableViewProtocol>
 
 @end
 
@@ -17,43 +18,74 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-//    [self initTableView];
+    
+    [self addRefreshView];
+    [self prepareLoadData];
+}
+#pragma mark - Init
+- (void) addRefreshView
+{
+    MJRefreshGifHeader *header = [MJRefreshGifHeader DYHeaderWithRefreshingBlock:^{
+        [self prepareLoadData];
+    }];
+    self.tableView.mj_header = header;
+}
+- (void)prepareLoadData
+{
+    [[self.viewModel.fetchDataCommand execute:nil] subscribeNext:^(id x) {
+        dispatch_async(dispatch_get_main_queue(), ^{
+            [self.tableView reloadData];
+            [self.tableView.mj_header endRefreshing];
+        });
+        
+    }];
 }
 
-//- (void) initTableView
-//{
-//    MJRefreshGifHeader *header = [MJRefreshGifHeader DYHeaderWithRefreshingBlock:^{
-//        [self prepareLoadData];
-//    }];
-//    self.tableView.mj_header = header;
-//    self.tableView.delegate = self;
-//    self.tableView.dataSource = self;
-//}
-//
-- (void)prepareLoadData {}
-//- (UITableView *)tableView
-//{
-//    return nil;
-//}
+#pragma mark - DYTableViewProtocol
+- (UITableView *)tableView { return nil; }
 
 #pragma mark - UITableView Delegate & DataSource
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 1;
+}
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return self.viewModel.dataSource.count;
+}
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    id<DYCellRenderProtocol> cellModel = self.viewModel.dataSource[indexPath.row];
+    
+    NSString *cellIdentifier;
+    UITableViewCell<DYCellProtocol> *cell;
+    
+    if ([cellModel respondsToSelector:@selector(cellIdentifier)])
+    {
+        cellIdentifier = [cellModel cellIdentifier];
+        cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+        [cell bindViewModel:cellModel];
+    }
+    
+    return cell;
+}
 
-//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-//{
-//    return 1;
-//}
-//- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
-//{
-//    return 0;
-//}
-//- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
-//{
-//    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
-//    return cell;
-//}
-//- (UITableViewCell *)tableView:(UITableView *)tableView dequeueReusableCellforIndexPath:(NSIndexPath *)indexPath
-//{ return nil; }
+- (CGFloat) tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    id<DYCellRenderProtocol> cellModel = self.viewModel.dataSource[indexPath.row];
+    
+    if ([cellModel respondsToSelector:@selector(cellIdentifier)]) {
+        NSString *cellClassStr = [cellModel cellIdentifier];
+        Class<DYCellProtocol> cellClass = NSClassFromString(cellClassStr);
+        
+        if ([(NSObject *)cellClass respondsToSelector:@selector(sizeForViewModel:constrainedToSize:)]) {
+            return [cellClass sizeForViewModel:cellModel
+                             constrainedToSize:tableView.frame.size].height;
+        }
+    }
+    return 0;
+}
+
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
