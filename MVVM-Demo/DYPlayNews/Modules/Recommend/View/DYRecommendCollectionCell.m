@@ -20,7 +20,7 @@
 
 - (void)bindViewModel:(DYRecommendCellModel *)viewModel
 {
-    DYRecommendEntity *entity = (DYRecommendEntity *)viewModel.entity;
+    DYRecommendEntity *entity = viewModel.entity;
     RAC(self.titleLabel, text) = [RACObserve(entity, topicName) takeUntil:self.rac_prepareForReuseSignal];
     [self.topImageView sd_setImageWithURL:[viewModel fitSizeImageURLWithURL:entity.iconUrl]];
 

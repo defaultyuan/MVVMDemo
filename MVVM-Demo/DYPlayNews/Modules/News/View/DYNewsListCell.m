@@ -21,7 +21,7 @@
 
 - (void)bindViewModel:(DYNewsListCellModel *)viewModel {
 
-    DYNews *entity = (DYNews *)viewModel.entity;
+    DYNews *entity = viewModel.entity;
     [self.iconImageView sd_setImageWithURL:[NSURL URLWithString:entity.imgsrc.firstObject]];
     [self.commentCount setTitle:[NSString stringWithFormat:@" %zd",entity.replyCount] forState:UIControlStateNormal];
     RAC(self.titleLabel, text) = [RACObserve(entity, title) takeUntil:self.rac_prepareForReuseSignal];
