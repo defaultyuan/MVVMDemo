@@ -20,7 +20,7 @@
 
 - (void)bindViewModel:(DYNewsImageCellModel *)viewModel {
     
-    DYNews *entity = (DYNews *)viewModel.entity;
+    DYNews *entity = viewModel.entity;
     [self.bigImageView sd_setImageWithURL:[viewModel fitSizeImageURLWithURL:entity.imgsrc.firstObject]];
     RAC(self.titleLabel, text) = [RACObserve(entity, title) takeUntil:self.rac_prepareForReuseSignal];
 }
